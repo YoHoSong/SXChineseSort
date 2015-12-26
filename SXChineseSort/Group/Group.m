@@ -22,7 +22,7 @@
         [wordArray addObject:charString];
     }
     [wordArray addObject:@"#"];
-    
+    //先进行排序然后分组，还是先分组后排序
     //依据字符串数组创建字典，且字典的key就是A-Z，Value均为可变数组，然后把所有字典放到容器数组中
     for (int i = 0; i<wordArray.count; i++) {
         NSMutableDictionary *dic = [NSMutableDictionary dictionary];
